@@ -1,0 +1,29 @@
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfplan
+*.tfvars
+terraform.tfvars.example
+.terraform.lock.hcl
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.bak
