@@ -13,7 +13,7 @@ This directory contains Terraform code to deploy the Ping-Pong application from 
 - **Kubernetes resources vs Task Definitions**: Migration from K8s resources to ECS task definitions requires reconfiguration and shift the problem without simplifying it.
 - **IaC vs Helm**: For Fargate, infrastructure as code is needed to deploy the applications, while Helm is used for Kubernetes resources. This requires a shift in mindset and tooling.
 - **Less observability**: Fargate provides less visibility into the underlying infrastructure compared to EKS with Container Insights.
-- **Cold Start Latency**: Fargate may introduce latency during task startup.
+- **Cold Start Latency**: Fargate may introduce latency during task startup. In a K8s the resources are already provisioned so the start time is lower.
 - **Limited Customization**: Less control over the underlying infrastructure
 - **Potentially Higher Costs**: Fargat is charged by resources requested and not used, while all the resources in a K8s cluster can be shared while not in use.
 
